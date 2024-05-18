@@ -2,32 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.hero_slideshow {
+  background-image: url(/hero/IMG_3202.JPG), url(/hero/IMG_3230.JPG), url(/hero/IMG_3374.JPG), url(/hero/IMG_3413.JPG), url(/hero/IMG_9967.JPG); 
+  animation: image_anime 30s ease infinite; 
+  animation-fill-mode: forwards; 
+  animation-delay: 4s;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.hero_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+@keyframes image_anime {
+  0% {
+    background-image: url(/hero/IMG_3202.JPG); /* 切り替え後の画像1 */
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  20% {
+    background-image: url(/hero/IMG_3230.JPG); /* 切り替え後の画像2 */
+  }
+  40% {
+    background-image: url(/hero/IMG_3374.JPG); /* 切り替え後の画像3 */
+  }
+  60% {
+    background-image: url(/hero/IMG_3413.JPG); /* 切り替え後の画像4 */
+  }
+  80% {
+    background-image: url(/hero/IMG_9967.JPG); /* 切り替え後の画像5 */
   }
 }
