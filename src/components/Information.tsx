@@ -11,12 +11,13 @@ export default function Information(){
             </div>
           </div>
           </div>
-          <div className="p-4 md:p-10 bg-primary_color">
-            <div className="border-primary_text_color border-solid border-2 p-10">
+          <div className="p-4 md:p-10 bg-primary_color justify-center">
+            <div className="border-primary_text_color border-solid border-2 p-10 soace-y-3">
               <h3 className="text-xl md:text-2xl hidden md:block">2024年6月7日(金) 生徒開催</h3>
-              <h3 className="text-xl md:text-2xl hidden md:block">2024年6月7日(土) 一般開放</h3>
+              <h3 className="text-xl md:text-2xl hidden md:block">2024年6月8日(土) 一般開放</h3>
               <h3 className="text-xl md:text-2xl block md:hidden">2024年6月7日(金)<br/>生徒開催</h3>
-              <h3 className="text-xl md:text-2xl block md:hidden">2024年6月7日(土)<br/>一般開放</h3>
+              <h3 className="text-xl md:text-2xl block md:hidden">2024年6月8日(土)<br/>一般開放</h3>
+              <p>6月8日(土)は、高校・オープンスクール、中学・オープンデー同時開催<br/>(※高校オープンスクールは事前申し込みが必要です。)</p>
             </div>
           </div>
         </div>
