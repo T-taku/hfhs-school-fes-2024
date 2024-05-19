@@ -5,7 +5,7 @@
 .hero_slideshow {
   top: 0;
   position: absolute;
-  background-image: url(/hero/IMG_3202.JPG), url(/hero/IMG_3230.JPG), url(/hero/IMG_3374.JPG), url(/hero/IMG_3413.JPG), url(/hero/IMG_9967.JPG); 
+  background-image: url(/hero/IMG_3202.JPG), url(/hero/IMG_3230.JPG); 
   animation: image_anime 30s ease infinite; 
   animation-fill-mode: forwards; 
   animation-delay: 4s;
