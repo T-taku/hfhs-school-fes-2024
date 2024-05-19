@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Kaisei_Opti } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const kaisei = Kaisei_Opti({ weight: ["400"], subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={kaisei.className}>
+        <Header/>
         {children}
       </body>
     </html>
