@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={kaisei.className}>
+      <body className={`bg-primary_text_color ${kaisei.className}`}>
         <Header/>
         {children}
       </body>
