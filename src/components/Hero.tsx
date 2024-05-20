@@ -1,7 +1,4 @@
-"use client"
 import Image from "next/image";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import '@splidejs/splide/css'
 
 export default function Hero(){
   return(
