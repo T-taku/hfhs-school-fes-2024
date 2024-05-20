@@ -6,7 +6,7 @@ import { FaMapMarkedAlt, FaWalking } from "react-icons/fa";
 export default function For_Visitor(){
   return(
     <>
-      <div className="relative">
+      <div className="relative" id="for-visitor">
         <div className="text-primary_text_color w-screen p-2 md:p-8 text-center">
           <div className="flex justify-center md:justify-start items-center h-full">
           <div className="relative md:absolute top-0 text-primary_color p-2 py-10 md:p-5 lg:p-10 md:py-20 flex items-center justify-center">
