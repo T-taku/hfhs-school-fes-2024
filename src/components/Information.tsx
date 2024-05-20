@@ -1,7 +1,7 @@
 export default function Information(){
   return(
     <>
-      <div className="relative top-[100vh]">
+      <div className="relative">
         <div className="text-primary_text_color w-screen p-2 md:p-8 space-y-3 text-center">
           <div className="flex justify-end items-start h-full">
           <div className="absolute top-0 bg-[#786A5C] text-primary_text_color p-2 py-10 md:p-5 lg:p-10 md:py-20 flex items-center justify-center">
