@@ -8,7 +8,7 @@ const NotoSans = Noto_Sans_JP({ subsets: ["latin"] });
 export default function PickUp_Card({title, content, link = "", link_text="詳しくはこちら", image = ""}:{title:string, content:string, link:string, link_text:string, image:string}){
   return(
     <>
-      <div className="bg-menu_color text-primary_text_color overflow-hidden flex flex-col items-center md:flex-row rounded-xl min-w-[60%] max-w-[60%]">
+      <div className="bg-menu_color text-primary_text_color overflow-hidden flex flex-col items-center md:flex-row rounded-xl md:min-w-[60%] md:max-w-[60%]">
         <div className="p-8 flex-1">
           <h2 className="text-3xl font-bold mb-4"><BudouXText text={title}/></h2>
           <p className={`mb-4 ${NotoSans.className}`}>
