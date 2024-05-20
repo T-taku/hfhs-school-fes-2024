@@ -22,6 +22,7 @@ const config = {
         primary_color: "#9C1629",
         menu_color: "#5D7711",
         primary_text_color: "#F4E9D9",
+        secondary_text_color: "#786A5C",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
