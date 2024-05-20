@@ -1,3 +1,4 @@
+import For_Visitor from "@/components/For_Visitor";
 import Hero from "@/components/Hero";
 import Information from "@/components/Information";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <Hero/>
       <Information/>
+      <For_Visitor/>
     </>
   );
 }
