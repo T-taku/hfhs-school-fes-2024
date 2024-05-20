@@ -10,7 +10,7 @@ export default function PickUp_Card({title, content, link = "", link_text="Ë©≥„Å
     <>
       <div className="bg-menu_color text-primary_text_color overflow-hidden flex flex-col items-center md:flex-row rounded-xl md:min-w-[60%] md:max-w-[60%]">
         <div className="p-8 flex-1">
-          <h2 className="text-3xl font-bold mb-4"><BudouXText text={title}/></h2>
+          <h2 className="text-3xl font-bold mb-4">{title}</h2>
           <p className={`mb-4 ${NotoSans.className}`}>
             <BudouXText text={content}/>
           </p>
