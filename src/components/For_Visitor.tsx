@@ -6,38 +6,38 @@ import { FaMapMarkedAlt, FaWalking } from "react-icons/fa";
 export default function For_Visitor(){
   return(
     <>
-      <div className="relative" id="for-visitor">
-        <div className="text-primary_text_color w-screen p-2 md:p-8 text-center">
-          <div className="flex justify-center md:justify-start items-center h-full">
-          <div className="relative md:absolute top-0 text-primary_color p-2 py-10 md:p-5 lg:p-10 md:py-20 flex items-center justify-center">
-            <div className="relative [writing-mode:vertical-rl] flex flex-col items-start m-4">
+      <div className="relative p-8" id="for-visitor">
+        <div className="text-primary_text_color text-center">
+          <div className="flex justify-center md:justify-start items-center">
+          <div className="relative text-primary_color flex items-center justify-center">
+            <div className="relative flex flex-col items-start">
               <span className="text-2xl md:text-3xl">ご来場の皆様へ</span>
               <span className="text-sm mb-2 text-secondary_text_color">For-Visitor</span>
             </div>
           </div>
           </div>
-          <div className="p-4 md:p-10 flex flex-wrap md:grid-cols-3 md:gap-3 justify-center items-center">
+          <div className="flex flex-wrap lg:grid-cols-3 lg:gap-1 justify-center items-center">
             <Visitor_MenuIcon content={
               <>
-                <FiAlertTriangle className="text-[38px] md:text-[65px]"/>
+                <FiAlertTriangle className="text-[38px] md:text-[60px]"/>
                 <h3 className="text-lg"><BudouXText text="来場の際の注意点"/></h3>
               </>
             }/>
             <Visitor_MenuIcon content={
               <>
-                <FaWalking className="text-[38px] md:text-[65px]"/>
+                <FaWalking className="text-[38px] md:text-[60px]"/>
                 <h3 className="text-lg"><BudouXText text="アクセス"/></h3>
               </>
             }/>
             <Visitor_MenuIcon content={
               <>
-                <FaMapMarkedAlt className="text-[38px] md:text-[65px]"/>
+                <FaMapMarkedAlt className="text-[38px] md:text-[60px]"/>
                 <h3 className="text-lg"><BudouXText text="校内マップ"/></h3>
               </>
             }/>
             <Visitor_MenuIcon content={
               <>
-                <FiHelpCircle className="text-[38px] md:text-[65px]"/>
+                <FiHelpCircle className="text-[38px] md:text-[60px]"/>
                 <h3 className="text-lg"><BudouXText text="お困りの場合"/></h3>
               </>
             }/>
