@@ -26,8 +26,8 @@ export default function PickUp_Card({title, content, link = "", link_text="Ë©≥„Å
           <Image
             src={image ? image : "/logo_white_2.png"}
             alt=""
-            width={500}
-            height={300}
+            width={900}
+            height={500}
             className="w-full h-full object-fill"
           />
         </div>
