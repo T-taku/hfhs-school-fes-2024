@@ -17,7 +17,7 @@ export default function Information(){
               <h3 className="text-xl md:text-2xl hidden md:block">2024年6月8日(土) 一般開放</h3>
               <h3 className="text-xl md:text-2xl block md:hidden">2024年6月7日(金)<br/>生徒開催</h3>
               <h3 className="text-xl md:text-2xl block md:hidden">2024年6月8日(土)<br/>一般開放</h3>
-              <p>6月8日(土)は、高校・オープンスクール、中学・オープンデー同時開催<br/>(※高校オープンスクールは事前申し込みが必要です。)</p>
+              <p>6月8日(土)は、高校・オープンスクール、中学・オープンデー同時開催<br/>(※高校オープンスクールの申し込みは終了しました。)</p>
             </div>
           </div>
         </div>
