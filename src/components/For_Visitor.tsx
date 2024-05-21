@@ -10,7 +10,7 @@ export default function For_Visitor(){
         <div className="text-primary_text_color text-center">
           <div className="flex justify-center md:justify-start items-center">
           <div className="relative text-primary_color flex items-center justify-center">
-            <div className="relative flex flex-col items-start">
+            <div className="relative mx-10 flex flex-col items-center md:items-start">
               <span className="text-2xl md:text-3xl">ご来場の皆様へ</span>
               <span className="text-sm mb-2 text-secondary_text_color">For-Visitor</span>
             </div>
