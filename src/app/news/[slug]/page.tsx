@@ -57,7 +57,7 @@ export default async function Page({ params }: Props) {
         <span className="block text-primary_text_color text-3xl font-bold">お知らせ</span>
         <span className="block text-primary_text_color text-2xl font-bold">News</span>
       </div>
-      <article className="p-2 px-20">
+      <article className="p-2 md:px-20">
         <BreadCrumbs 
           lists={[
             {
