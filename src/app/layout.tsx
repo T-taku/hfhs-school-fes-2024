@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Kaisei_Opti } from "next/font/google";
 import "./globals.css";
+import '@radix-ui/themes/styles.css';
 import Header from "@/components/Header";
 
 const kaisei = Kaisei_Opti({ weight: ["400"], subsets: ["latin"] });
