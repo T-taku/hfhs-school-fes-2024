@@ -6,8 +6,8 @@ import type { Article } from '@/types/article'
 import { Category } from "@/types/category"
 
 const client = createClient({
-  spaceUid: process.env.NEWT_SPACE_UID + '',
-  token: process.env.NEWT_CDN_API_TOKEN + '',
+  spaceUid: process.env.NEXT_PUBLIC_NEWT_SPACE_UID + '',
+  token: process.env.NEXT_PUBLIC_NEWT_CDN_API_TOKEN + '',
   apiType: 'cdn',
 })
 
