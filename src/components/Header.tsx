@@ -39,7 +39,7 @@ export default function Header(){
         </div>
       </div>
       <div className="relative">
-        <div className={`fixed px-40 py-40 bottom-0 text-center text-primary_text_color transition-all duration-300 w-screen ${!isOpen ? `opacity-0 translate-y-10 pointer-events-none delay-300 duration-200 z-0` : `opacity-100 translate-y-0 pointer-events-auto delay-300 z-50`}`}>
+        <div className={`absolute px-40 py-40 bottom-0 text-center text-primary_text_color transition-all duration-300 w-screen ${!isOpen ? `opacity-0 translate-y-10 pointer-events-none delay-300 duration-200 z-0` : `opacity-100 translate-y-0 pointer-events-auto delay-300 z-50`}`}>
           <div className="flex justify-center items-center gap-4 transition-all delay-100 duration-500">
             <span className="rounded-full border-2 border-primary_text_color p-2 transition-all duration-300 hover:bg-primary_text_color hover:text-menu_color">
               <Link href={"https://instagram.com/higashifukuoka_official"}><FaInstagram className="text-3xl"/></Link>
