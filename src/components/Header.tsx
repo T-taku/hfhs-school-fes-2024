@@ -20,7 +20,7 @@ export default function Header(){
           <ul className="list-none md:flex md:items-start space-y-8 md:space-y-0 md:space-x-8 md:flex-row-reverse">
             <li>
               <span className="max-md:flex max-md:justify-center max-md:items-center">
-                <Image src={"/logo_white_2.png"} alt={"東福岡学園 学園祭 2024 ロゴ"} width="150" height="150" className="md:mx-8"/>
+                <Image src={"/logo_white_2.webp"} alt={"東福岡学園 学園祭 2024 ロゴ"} width="150" height="150" className="md:mx-8"/>
               </span>
             </li> 
             <li className="text-3xl md:[writing-mode:vertical-rl] transition-all duration-150 hover:opacity-60">
