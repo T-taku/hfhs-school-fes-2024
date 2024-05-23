@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss"
+import { PluginAPI } from 'tailwindcss/types/config';
 
 const config = {
   darkMode: ["class"],
@@ -18,8 +19,17 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        'footer': "url('/night_school.webp')",
+      },
+      fontFamily: {
+        notojp: ['var(--font-notojp)'],
+      },
       colors: {
         primary_color: "#9C1629",
+        menu_color: "#5D7711",
+        primary_text_color: "#F4E9D9",
+        secondary_text_color: "#786A5C",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -75,7 +85,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),require("tailwindcss-radix"), require('@tailwindcss/typography')],
 } satisfies Config
 
 export default config

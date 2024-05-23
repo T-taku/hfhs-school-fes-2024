@@ -6,19 +6,35 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "patch-package"
   },
   "dependencies": {
+    "@next/third-parties": "^14.2.3",
+    "@radix-ui/themes": "^3.0.5",
+    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/splide": "^4.1.4",
+    "@tailwindcss/typography": "^0.5.13",
+    "budoux": "^0.6.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "html-to-text": "^9.0.5",
     "lucide-react": "^0.378.0",
+    "luxon": "^3.4.4",
+    "newt-client-js": "^3.3.2",
     "next": "14.2.3",
+    "patch-package": "^8.0.0",
+    "postinstall-postinstall": "^2.1.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-icons": "^5.2.1",
+    "server-only": "^0.0.1",
     "tailwind-merge": "^2.3.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "tailwindcss-radix": "^3.0.3"
   },
   "devDependencies": {
+    "@types/html-to-text": "^9.0.4",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
