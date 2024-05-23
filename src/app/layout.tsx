@@ -3,6 +3,7 @@ import { Kaisei_Opti } from "next/font/google";
 import "./globals.css";
 import '@radix-ui/themes/styles.css';
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const kaisei = Kaisei_Opti({ weight: ["400"], subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={`bg-primary_text_color ${kaisei.className}`}>
         <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

@@ -1,6 +1,6 @@
 import { FiAlertTriangle, FiHelpCircle } from "react-icons/fi";
 import { FaMapMarkedAlt, FaWalking } from "react-icons/fa";
-import { FaChildReaching, FaMessage } from "react-icons/fa6";
+import { FaChildReaching, FaClock, FaMessage } from "react-icons/fa6";
 import Visitor_MenuIcon from "./VisitorIcon";
 import { BudouXText } from "@/lib/budoux";
 
@@ -34,6 +34,10 @@ export default function For_Visitor() {
               <Visitor_MenuIcon content={<>
                 <FaMapMarkedAlt className="text-[38px] md:text-[60px]" />
                 <h3 className="text-lg"><BudouXText text="校内マップ" /></h3>
+              </>} link={""} />
+              <Visitor_MenuIcon content={<>
+                <FaClock className="text-[38px] md:text-[60px]" />
+                <h3 className="text-lg"><BudouXText text="タイムテーブル" /></h3>
               </>} link={""} />
               <Visitor_MenuIcon content={<>
                 <FaChildReaching className="text-[38px] md:text-[60px]" />

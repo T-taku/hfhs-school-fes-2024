@@ -19,6 +19,9 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        'footer': "url('/night_school.webp')",
+      },
       fontFamily: {
         notojp: ['var(--font-notojp)'],
       },
