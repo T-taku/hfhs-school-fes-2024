@@ -19,7 +19,7 @@ export default async function News() {
                 <span className="text-sm mb-2 text-secondary_text_color">News</span>
               </div>
             </div>
-            <div className="flex flex-wrap gap-2 md:gap-4 justify-center items-start min-w-[1100px] max-w-[1100px] px-4">
+            <div className="flex flex-wrap gap-2 md:gap-4 justify-center items-start md:w-[1100px] px-4">
               <ul className="divide-y-2 divide-primary_color text-xl">
                 {articles.map((article:any) => {
                   return (

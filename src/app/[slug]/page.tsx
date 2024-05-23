@@ -1,5 +1,5 @@
 import { formatDate } from '@/lib/date'
-import { getArticle, getArticles } from '@/lib/newt'
+import { getPages, getPage } from '@/lib/newt_pages'
 import { notFound } from 'next/navigation'
 import { htmlToText } from 'html-to-text'
 import BreadCrumbs from "@/components/breadcrumbs";
@@ -15,7 +15,7 @@ const NotoSans = Noto_Sans_JP({ subsets: ["latin"] });
 const kaisei = Kaisei_Opti({ weight: ["400"], subsets: ["latin"] });
 
 export async function generateStaticParams() {
-  const { articles } = await getArticles()
+  const { articles } = await getPages()
   return articles.map((article) => ({
     slug: article.slug,
   }))
@@ -24,30 +24,21 @@ export const dynamicParams = false
 
 export async function generateMetadata({ params }: Props) {
   const { slug } = params
-  const article = await getArticle(slug)
+  const article = await getPage(slug)
 
-  const title = article?.meta?.title || article?.title
-  const bodyDescription = htmlToText(article?.body || '', {
+  const title = article?.title
+  const description = htmlToText(article?.body || '', {
     selectors: [{ selector: 'img', format: 'skip' }],
   }).slice(0, 200)
-  const description = article?.meta?.description || bodyDescription
-  const ogImage = article?.meta?.ogImage?.src
 
   return {
-    title,
-    description,
-    openGraph: {
-      type: 'article',
-      title,
-      description,
-      images: ogImage,
-    },
+    title, description
   }
 }
 
 export default async function Page({ params }: Props) {
   const { slug } = params
-  const article = await getArticle(slug)
+  const article = await getPage(slug)
   if (!article) {
     notFound()
   }
@@ -55,8 +46,7 @@ export default async function Page({ params }: Props) {
   return (
     <main>
       <div className="flex flex-col justify-center items-center p-20 bg-menu_color">
-        <span className="block text-primary_text_color text-4xl font-bold">お知らせ</span>
-        <span className="block text-primary_text_color text-2xl font-bold">News</span>
+        <span className="block text-primary_text_color text-4xl font-bold">{article.title}</span>
       </div>
       <article className="p-2 md:px-20">
         <BreadCrumbs 
@@ -72,17 +62,6 @@ export default async function Page({ params }: Props) {
         />
         <div className="p-6 flex justify-center items-center">
           <div className="flex flex-col justify-between items-between">
-            <div className="my-8 border-b-2 border-b-primary_color">
-              <div className="flex justify-between">
-                <time dateTime={formatDate(article._sys.createdAt)} className=''>
-                  {formatDate(article._sys.createdAt)}
-                </time>
-                <span className="text-primary_color border-primary_color border px-2 rounded-full">{article.category.name}</span>
-              </div>
-              <div className="text-3xl pb-6">
-                {article.title}
-              </div>
-            </div>
             <div className={NotoSans.className}>
               <div className={`prose prose-lg prose-a:text-primary_color prose-li:marker:text-menu_color`} dangerouslySetInnerHTML={{ __html: article.body }}></div>
             </div>

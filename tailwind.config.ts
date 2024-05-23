@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss"
+import { PluginAPI } from 'tailwindcss/types/config';
 
 const config = {
   darkMode: ["class"],
@@ -18,6 +19,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        notojp: ['var(--font-notojp)'],
+      },
       colors: {
         primary_color: "#9C1629",
         menu_color: "#5D7711",

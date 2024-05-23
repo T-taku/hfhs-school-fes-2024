@@ -32,6 +32,9 @@ export default function Header(){
             <li className="text-3xl md:[writing-mode:vertical-rl] transition-all duration-150 hover:opacity-60">
               <Link href={"/#pickup"} onClick={()=>setOpen(!isOpen)}>おすすめ企画</Link>
             </li>
+            <li className="text-3xl md:[writing-mode:vertical-rl] transition-all duration-150 hover:opacity-60">
+              <Link href={"/#news"} onClick={()=>setOpen(!isOpen)}>最新情報</Link>
+            </li>
           </ul>
         </div>
       </div>

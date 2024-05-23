@@ -17,42 +17,32 @@ export default function For_Visitor() {
               </div>
             </div>
             <div className="flex flex-wrap gap-2 md:gap-4 justify-center items-center max-w-[1100px]">
-              <Visitor_MenuIcon content={
+              <Visitor_MenuIcon link={"/cautions"} content={
                 <>
                   <FiAlertTriangle className="text-[38px] md:text-[60px]" />
                   <h3 className="text-lg"><BudouXText text="来場の際の注意点"/></h3>
                 </>
               } />
-              <Visitor_MenuIcon content={
-                <>
-                  <FaWalking className="text-[38px] md:text-[60px]" />
-                  <h3 className="text-lg"><BudouXText text="アクセス"/></h3>
-                </>
-              } />
-              <Visitor_MenuIcon content={
-                <>
-                  <FaMessage className="text-[38px] md:text-[60px]" />
-                  <h3 className="text-lg"><BudouXText text="ごあいさつ"/></h3>
-                </>
-              } />
-              <Visitor_MenuIcon content={
-                <>
-                  <FaMapMarkedAlt className="text-[38px] md:text-[60px]" />
-                  <h3 className="text-lg"><BudouXText text="校内マップ"/></h3>
-                </>
-              } />
-              <Visitor_MenuIcon content={
-                <>
-                  <FaChildReaching className="text-[38px] md:text-[60px]" />
-                  <h3 className="text-lg"><BudouXText text="お子様連れの来場者の皆様へ"/></h3>
-                </>
-              } />
-              <Visitor_MenuIcon content={
-                <>
-                  <FiHelpCircle className="text-[38px] md:text-[60px]" />
-                  <h3 className="text-lg"><BudouXText text="お困りの場合"/></h3>
-                </>
-              } />
+              <Visitor_MenuIcon content={<>
+                <FaWalking className="text-[38px] md:text-[60px]" />
+                <h3 className="text-lg"><BudouXText text="アクセス" /></h3>
+              </>} link={"/access"} />
+              <Visitor_MenuIcon content={<>
+                <FaMessage className="text-[38px] md:text-[60px]" />
+                <h3 className="text-lg"><BudouXText text="ごあいさつ" /></h3>
+              </>} link={""} />
+              <Visitor_MenuIcon content={<>
+                <FaMapMarkedAlt className="text-[38px] md:text-[60px]" />
+                <h3 className="text-lg"><BudouXText text="校内マップ" /></h3>
+              </>} link={""} />
+              <Visitor_MenuIcon content={<>
+                <FaChildReaching className="text-[38px] md:text-[60px]" />
+                <h3 className="text-lg"><BudouXText text="お子様連れの来場者の皆様へ" /></h3>
+              </>} link={""} />
+              <Visitor_MenuIcon content={<>
+                <FiHelpCircle className="text-[38px] md:text-[60px]" />
+                <h3 className="text-lg"><BudouXText text="お困りの場合" /></h3>
+              </>} link={"/need-help"} />
             </div>
           </div>
           <p className="text-primary_color mt-4">※現在コンテンツ準備中です※</p>
