@@ -5,12 +5,12 @@ import { FaInstagram } from "react-icons/fa6";
 export default function Footer(){
   return(
     <>
-      <footer className="bottom-0 mt-8 bg-[#263b5c] bg-opacity-85">
+      <footer className="bottom-0 mt-8 bg-[#1e2e48] bg-opacity-85">
         <div className="container p-6 mx-auto">
           <div className="lg:flex">
             <div className="w-full -mx-6 lg:w-1/2">
               <div className="px-6">
-                <Link href="#">
+                <Link href="/">
                     <Image className="w-auto h-[8.75rem]" src="/logo_white_1.png" width="300" height="300" alt=""/>
                 </Link>
                 <p className="max-w-sm mt-2 text-primary_text_color">2024年6月7日(金)<br/>2024年6月8日(土)</p>
