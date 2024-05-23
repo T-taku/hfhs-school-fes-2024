@@ -4,6 +4,7 @@ import "./globals.css";
 import '@radix-ui/themes/styles.css';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { GoogleAnalytics } from "@next/third-parties/google"
 
 const kaisei = Kaisei_Opti({ weight: ["400"], subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
         {children}
         <Footer/>
       </body>
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID ?? ""} />
     </html>
   );
 }
