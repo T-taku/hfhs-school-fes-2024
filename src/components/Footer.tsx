@@ -58,7 +58,7 @@ export default function Footer(){
           <hr className="h-px my-6 bg-gray-200 border-none"/>
 
           <div>
-              <p className="text-center text-primary_text_color">© 2024 Higashi Fukuoka High School Digital Comitte All rights reserved.</p>
+              <p className="text-center text-primary_text_color">© 2024 Higashi Fukuoka High School Digital Committee All rights reserved.</p>
           </div>
         </div>
       </footer>
