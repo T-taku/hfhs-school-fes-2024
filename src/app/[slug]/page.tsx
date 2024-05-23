@@ -62,9 +62,9 @@ export default async function Page({ params }: Props) {
           ]}
         />
         <div className="p-6 flex justify-center items-center">
-          <div className="flex flex-col justify-between items-between">
+          <div className="flex flex-col">
             <div className={NotoSans.className}>
-              <div className={`prose prose-lg prose-a:text-primary_color prose-li:marker:text-menu_color`} dangerouslySetInnerHTML={{ __html: article.body }}></div>
+              <div className={`prose prose-xl prose-a:text-primary_color prose-li:marker:text-menu_color prose-hr:border-primary_color prose-hr:m-2`} dangerouslySetInnerHTML={{ __html: article.body }}></div>
             </div>
           </div>
         </div>
