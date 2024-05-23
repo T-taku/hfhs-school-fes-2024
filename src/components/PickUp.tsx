@@ -30,7 +30,7 @@ export default function PickUp() {
                     title={`サッカー部・バレー部による招待試合開催決定!`}
                     content="学園祭2日目には、我が校が誇るサッカー部、バレー部による招待試合を開催予定!ヒガシ生による熱いプレーにご注目ください!"
                     link={""}
-                    image={"/volley-ball.JPG"}
+                    image={"/volley-ball.webp"}
                     link_text={""}
                   />
                 </SplideSlide>
@@ -39,7 +39,7 @@ export default function PickUp() {
                       title={`スタンプを集めて、ヒガシオリジナルグッズをゲット!`}
                       content="各文化部展示会場に設置されている、スタンプを全て集めて、ヒガシオリジナルグッズをゲットしよう!!"
                       link={""}
-                      image={"/StampCollecting.JPG"}
+                      image={"/StampCollecting.webp"}
                       link_text={""}
                     />
                 </SplideSlide>
