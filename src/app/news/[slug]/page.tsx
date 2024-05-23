@@ -84,7 +84,7 @@ export default async function Page({ params }: Props) {
               </div>
             </div>
             <div className={NotoSans.className}>
-              <div className={`prose prose-lg prose-a:text-primary_color prose-li:marker:text-menu_color prose-hr:border-primary_color prose-hr:m-2`} dangerouslySetInnerHTML={{ __html: article.body }}></div>
+              <div className={`prose prose-a:text-primary_color prose-li:marker:text-menu_color prose-hr:border-primary_color prose-hr:m-2`} dangerouslySetInnerHTML={{ __html: article.body }}></div>
             </div>
           </div>
         </div>
