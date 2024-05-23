@@ -2,39 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.hero_slideshow {
-  background-image: url(/hero/IMG_3202.JPG), url(/hero/IMG_3230.JPG), url(/hero/IMG_3374.JPG), url(/hero/IMG_3413.JPG), url(/hero/IMG_9967.JPG); 
-  animation: image_anime 30s ease infinite; 
-  animation-fill-mode: forwards; 
-  animation-delay: 4s;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-}
-
-.hero_text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-}
-
-@keyframes image_anime {
-  0% {
-    background-image: url(/hero/IMG_3202.JPG); /* 切り替え後の画像1 */
-  }
-  20% {
-    background-image: url(/hero/IMG_3230.JPG); /* 切り替え後の画像2 */
-  }
-  40% {
-    background-image: url(/hero/IMG_3374.JPG); /* 切り替え後の画像3 */
-  }
-  60% {
-    background-image: url(/hero/IMG_3413.JPG); /* 切り替え後の画像4 */
-  }
-  80% {
-    background-image: url(/hero/IMG_9967.JPG); /* 切り替え後の画像5 */
-  }
+.ql-align-center{
+    text-align: center;
 }

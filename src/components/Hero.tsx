@@ -1,35 +1,42 @@
 "use client"
 
-import { useState, useEffect } from "react";
+// @ts-ignore
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/splide/dist/css/splide.min.css';
+import Image from 'next/image';
 
-export default function Hero(){
-  const calculateDaysLeft = () => {
-    const currentDate = new Date();
-    const targetDate = new Date('2024-06-07'); // ターゲットの日付
-    const difference = targetDate.getTime() - currentDate.getTime();
-    const daysLeft = Math.ceil(difference / (1000 * 60 * 60 * 24));
-    return daysLeft;
-  };
+export default function Hero() {
+  const images = [
+    "/hero/IMG_3202.webp",
+    "/hero/IMG_3230.webp",
+    "/hero/IMG_3374.webp",
+    "/hero/IMG_3413.webp",
+    "/hero/IMG_9967.webp"
+  ];
 
-  const [daysLeft, setDaysLeft] = useState(calculateDaysLeft());
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setDaysLeft(calculateDaysLeft());
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, []);
-  return(
-    <>
-      <div className="hero_slideshow">
-        <div className="divide-y divide-blue-400">
-          <span className="hero_text">
-          <span className="text-3xl">東福岡学園祭まで</span><br/>
-            <span className="text-3xl">あと<span className="text-5xl">{daysLeft}</span>日<br/></span>
-          </span>
-        </div>
-      </div>
-    </>
-  )
+  return (
+    <div className="relative">
+      <Splide
+        options={{
+          type: 'fade',
+          rewind: true,
+          autoplay: true,
+          interval: 4000,
+          speed: 2000,
+          arrows: false,
+          pagination: false,
+          pauseOnHover: false,
+          pauseOnFocus: false,
+        }}
+      >
+        {images.map((src, index) => (
+          <SplideSlide key={index} className="flex justify-center items-center bg-cover bg-center w-screen h-[100vh]" style={{ backgroundImage: `url(${src})` }}>
+            <div className="text-center">
+              <Image src="/logo_white_1.png" alt="東福岡学園 学園祭 2024 ロゴ" width={300} height={300} />
+            </div>
+          </SplideSlide>
+        ))}
+      </Splide>
+    </div>
+  );
 }
