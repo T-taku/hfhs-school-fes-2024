@@ -30,19 +30,19 @@ export default function For_Visitor() {
               <Visitor_MenuIcon content={<>
                 <FaMessage className="text-[38px] md:text-[60px]" />
                 <h3 className="text-lg"><BudouXText text="ごあいさつ" /></h3>
-              </>} link={""} />
+              </>} link={"/message"} />
               <Visitor_MenuIcon content={<>
                 <FaMapMarkedAlt className="text-[38px] md:text-[60px]" />
                 <h3 className="text-lg"><BudouXText text="校内マップ" /></h3>
-              </>} link={""} />
+              </>} link={"/map"} />
               <Visitor_MenuIcon content={<>
                 <FaClock className="text-[38px] md:text-[60px]" />
                 <h3 className="text-lg"><BudouXText text="タイムテーブル" /></h3>
-              </>} link={""} />
+              </>} link={"/timetable"} />
               <Visitor_MenuIcon content={<>
                 <FaChildReaching className="text-[38px] md:text-[60px]" />
                 <h3 className="text-lg"><BudouXText text="お子様連れの来場者の皆様へ" /></h3>
-              </>} link={""} />
+              </>} link={"/with-children"} />
               <Visitor_MenuIcon content={<>
                 <FiHelpCircle className="text-[38px] md:text-[60px]" />
                 <h3 className="text-lg"><BudouXText text="お困りの場合" /></h3>
