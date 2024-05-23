@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { htmlToText } from 'html-to-text'
 import BreadCrumbs from "@/components/breadcrumbs";
 import { Kaisei_Opti, Noto_Sans_JP } from 'next/font/google';
+import { BudouXText } from '@/lib/budoux';
 
 type Props = {
   params: {
@@ -46,7 +47,7 @@ export default async function Page({ params }: Props) {
   return (
     <main>
       <div className="flex flex-col justify-center items-center p-20 bg-menu_color">
-        <span className="block text-primary_text_color text-4xl font-bold">{article.title}</span>
+        <span className="block text-center text-primary_text_color text-3xl md:text-4xl font-bold"><BudouXText text={article.title}/></span>
       </div>
       <article className="p-2 md:px-20">
         <BreadCrumbs 
