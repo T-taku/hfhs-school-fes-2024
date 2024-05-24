@@ -1,6 +1,7 @@
 import { BudouXText } from "@/lib/budoux";
 import { Noto_Sans_JP } from "next/font/google";
 import Image from 'next/image';
+import Link from "next/link";
 import { FaAngleRight } from "react-icons/fa6";
 
 const NotoSans = Noto_Sans_JP({ subsets: ["latin"] });
@@ -15,10 +16,10 @@ export default function PickUp_Card({title, content, link = "", link_text="詳�
             <BudouXText text={content}/>
           </p>
           {link && (
-            <a href={link} className="text-xl inline-flex items-center hover:underline">
+            <Link href={link} className="text-xl relative inline-flex items-center cursor-pointer before:bg-primary_text_color before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 transition-all duration-500 hover:ml-4">
               <FaAngleRight />
               {link_text ? link_text : "詳しくはこちら"}
-            </a>
+            </Link>
             )
           }
         </div>

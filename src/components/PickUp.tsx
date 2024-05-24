@@ -29,7 +29,7 @@ export default function PickUp() {
                   <PickUp_Card
                     title={`サッカー部・バレー部による招待試合開催決定!`}
                     content="学園祭2日目には、我が校が誇るサッカー部、バレー部による招待試合を開催予定!ヒガシ生による熱いプレーにご注目ください!"
-                    link={""}
+                    link={"aaa"}
                     image={"/volley-ball.webp"}
                     link_text={""}
                   />

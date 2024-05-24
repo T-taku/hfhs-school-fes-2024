@@ -20,10 +20,10 @@ export default async function News() {
               </div>
             </div>
             <div className="flex flex-wrap gap-2 md:gap-4 justify-center items-start md:w-[1100px] px-4">
-              <ul className="divide-y-2 divide-primary_color text-xl">
+              <ul className="space-y-4 text-xl">
                 {articles.map((article:any) => {
                   return (
-                    <li key={article._id}>
+                    <li key={article._id} className="flex items-start">
                       <Link href={`news/${article.slug}`} prefetch={false}>
                         <div className="flex justify-start items-center space-x-4">
                           <time dateTime={formatDate(article._sys.createdAt)}>
@@ -31,7 +31,7 @@ export default async function News() {
                           </time>
                           <span className="text-primary_color border-primary_color border px-2 rounded-full">{article.category.name}</span>
                         </div>
-                        <span className="px-2">{article.title}</span>
+                        <span className="relative inline cursor-pointer before:bg-primary_color before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100">{article.title}</span>
                       </Link>
                     </li>
                   );
