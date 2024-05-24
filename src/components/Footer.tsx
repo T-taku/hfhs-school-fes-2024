@@ -20,21 +20,21 @@ export default function Footer(){
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 <div>
                   <h3 className="font-bold text-xl uppercase text-primary_text_color">学園祭について</h3>
-                  <Link href="cautions" className="block mt-2 text-sm  text-primary_text_color hover:underline" prefetch={false}>来場前の注意点</Link>
-                  <Link href="message" className="block mt-2 text-sm  text-primary_text_color hover:underline" prefetch={false}>ごあいさつ</Link>
+                  <Link href="/cautions" className="block mt-2 text-sm  text-primary_text_color hover:underline" prefetch={false}>来場前の注意点</Link>
+                  <Link href="/message" className="block mt-2 text-sm  text-primary_text_color hover:underline" prefetch={false}>ごあいさつ</Link>
                   <Link href="/#news" className="block mt-2 text-sm  text-primary_text_color hover:underline" prefetch={false}>最新情報</Link>
                 </div>
 
                 <div>
                   <h3 className="font-bold text-xl uppercase text-primary_text_color">学園祭の楽しみ方</h3>
-                  <Link href="map" className="block mt-2 text-sm  text-primary_text_color hover:underline" prefetch={false}>校内マップ</Link>
-                  <Link href="with-child" className="block mt-2 text-sm  text-primary_text_color hover:underline" prefetch={false}>お子様連れの方へ</Link>
-                  <Link href="timetable" className="block mt-2 text-sm  text-primary_text_color hover:underline" prefetch={false}>タイムテーブル</Link>
+                  <Link href="/map" className="block mt-2 text-sm  text-primary_text_color hover:underline" prefetch={false}>校内マップ</Link>
+                  <Link href="/with-child" className="block mt-2 text-sm  text-primary_text_color hover:underline" prefetch={false}>お子様連れの方へ</Link>
+                  <Link href="/timetable" className="block mt-2 text-sm  text-primary_text_color hover:underline" prefetch={false}>タイムテーブル</Link>
                 </div>
 
                 <div>
                   <h3 className="font-bold text-xl uppercase text-primary_text_color">このウェブサイトについて</h3>
-                  <Link href="privacy-policy" className="block mt-2 text-sm  text-primary_text_color hover:underline" prefetch={false}>個人情報保護方針</Link>
+                  <Link href="/privacy-policy" className="block mt-2 text-sm  text-primary_text_color hover:underline" prefetch={false}>個人情報保護方針</Link>
                 </div>
 
                 <div>
