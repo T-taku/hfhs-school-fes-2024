@@ -1,4 +1,4 @@
-import { jaModel, Parser } from "budoux";
+import { jaModel, Parser } from 'budoux';
 
 export const BudouXText: React.FC<{ text: string }> = ({ text }) => {
   const parser = new Parser(jaModel);

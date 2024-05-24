@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "patch-package"
+    "lint:fix": "next lint --fix",
+    "markuplint": "markuplint \"./**/*.tsx\"",
+    "postinstall": "patch-package",
+    "prettier": "prettier --write ."
   },
   "dependencies": {
     "@next/third-parties": "^14.2.3",
@@ -39,7 +42,12 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-tailwindcss": "^3.17.0",
+    "eslint-plugin-unused-imports": "^4.0.0",
+    "markuplint": "^4.8.1",
     "postcss": "^8",
+    "prettier": "^3.2.5",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }

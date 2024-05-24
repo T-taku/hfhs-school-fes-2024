@@ -1,7 +1,7 @@
-"use client"
+'use client';
 //@ts-ignore
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import PickUp_Card from "./PickUp_card";
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import PickUp_Card from './PickUp_card';
 
 export default function PickUp() {
   return (
@@ -22,26 +22,26 @@ export default function PickUp() {
                   autoplay: true,
                   interval: 10000,
                   rewind: true,
-                  perPage: 1
+                  perPage: 1,
                 }}
               >
                 <SplideSlide className="flex justify-center items-center">
                   <PickUp_Card
                     title={`サッカー部・バレー部による招待試合開催決定!`}
                     content="学園祭2日目には、我が校が誇るサッカー部、バレー部による招待試合を開催予定!ヒガシ生による熱いプレーにご注目ください!"
-                    link={"aaa"}
-                    image={"/volley-ball.webp"}
-                    link_text={""}
+                    link={'aaa'}
+                    image={'/volley-ball.webp'}
+                    link_text={''}
                   />
                 </SplideSlide>
                 <SplideSlide className="flex justify-center items-center">
                   <PickUp_Card
-                      title={`スタンプを集めて、ヒガシオリジナルグッズをゲット!`}
-                      content="各文化部展示会場に設置されている、スタンプを全て集めて、ヒガシオリジナルグッズをゲットしよう!!"
-                      link={""}
-                      image={"/StampCollecting.webp"}
-                      link_text={""}
-                    />
+                    title={`スタンプを集めて、ヒガシオリジナルグッズをゲット!`}
+                    content="各文化部展示会場に設置されている、スタンプを全て集めて、ヒガシオリジナルグッズをゲットしよう!!"
+                    link={''}
+                    image={'/StampCollecting.webp'}
+                    link_text={''}
+                  />
                 </SplideSlide>
               </Splide>
             </div>
@@ -51,4 +51,3 @@ export default function PickUp() {
     </>
   );
 }
-
