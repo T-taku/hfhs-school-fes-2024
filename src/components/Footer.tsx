@@ -57,7 +57,7 @@ export default function Footer() {
                     校内マップ
                   </Link>
                   <Link
-                    href="/with-child"
+                    href="/with-children"
                     className="block mt-2 text-sm  text-primary_text_color hover:underline"
                     prefetch={false}
                   >
