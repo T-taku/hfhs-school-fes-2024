@@ -24,7 +24,7 @@ export default async function News() {
                 {articles.map((article:any) => {
                   return (
                     <li key={article._id}>
-                      <Link href={`news/${article.slug} prefetch={false}`}>
+                      <Link href={`news/${article.slug}`} prefetch={false}>
                         <div className="flex justify-start items-center space-x-4">
                           <time dateTime={formatDate(article._sys.createdAt)}>
                             {formatDate(article._sys.createdAt)}
