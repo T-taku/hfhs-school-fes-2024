@@ -1,8 +1,5 @@
-//@ts-ignore
-import { DateTime } from 'luxon'
+import dayjs from 'dayjs';
 
 export const formatDate = (dateStr: string) => {
-  return DateTime.fromISO(dateStr)
-    .setZone('Asia/Tokyo')
-    .toLocaleString(DateTime.DATE_SHORT)
+  return dayjs(dateStr).format('YYYY/MM/DD');
 }

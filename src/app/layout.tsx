@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Kaisei_Opti } from "next/font/google";
 import "./globals.css";
-import '@radix-ui/themes/styles.css';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google"

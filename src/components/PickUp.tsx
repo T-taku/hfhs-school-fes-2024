@@ -8,7 +8,7 @@ export default function PickUp() {
     <>
       <div className="relative" id="pickup">
         <div className="w-screen p-2 md:p-8 text-center">
-          <div className="flex flex-col md:flex-row justify-center md:justify-center items-center">
+          <div className="flex flex-col md:flex-row justify-center items-center">
             <div className="relative text-primary_color p-4 lg:p-10 md:py-20 flex items-center justify-center">
               <div className="relative [writing-mode:vertical-rl] flex flex-col items-start">
                 <span className="text-2xl md:text-3xl">おすすめ企画</span>
