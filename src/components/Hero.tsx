@@ -30,7 +30,7 @@ export default function Hero() {
         }}
       >
         {images.map((src, index) => (
-          <SplideSlide key={index} className="flex justify-center items-center bg-cover bg-center w-screen h-[100vh]" style={{ backgroundImage: `url(${src})` }}>
+          <SplideSlide key={index} className="flex justify-center items-center bg-cover bg-center w-screen h-[100vh] shadow" style={{ backgroundImage: `url(${src})` }}>
             <div className="text-center">
               <Image src="/logo_white_1.webp" alt="東福岡学園 学園祭 2024 ロゴ" width={300} height={300} />
             </div>
