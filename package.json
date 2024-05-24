@@ -10,8 +10,7 @@
     "lint:fix": "next lint --fix",
     "markuplint": "markuplint \"./**/*.tsx\"",
     "postinstall": "patch-package",
-    "prettier": "prettier --write .",
-    "postbuild": "next-sitemap"
+    "prettier": "prettier --write ."
   },
   "dependencies": {
     "@next/third-parties": "^14.2.3",
