@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next-sitemap",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
@@ -48,7 +48,6 @@
     "eslint-plugin-tailwindcss": "^3.17.0",
     "eslint-plugin-unused-imports": "^4.0.0",
     "markuplint": "^4.8.1",
-    "next-sitemap": "^4.2.3",
     "postcss": "^8",
     "prettier": "^3.2.5",
     "tailwindcss": "^3.4.1",
