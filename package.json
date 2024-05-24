@@ -36,6 +36,7 @@
     "tailwindcss-radix": "^3.0.3"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^14.2.3",
     "@types/html-to-text": "^9.0.4",
     "@types/node": "^20",
     "@types/react": "^18",

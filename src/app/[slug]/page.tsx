@@ -1,5 +1,6 @@
 import { getPages, getPage } from '@/lib/newt_pages';
 import { notFound } from 'next/navigation';
+//@ts-ignore
 import { htmlToText } from 'html-to-text';
 import BreadCrumbs from '@/components/breadcrumbs';
 import { Noto_Sans_JP } from 'next/font/google';
