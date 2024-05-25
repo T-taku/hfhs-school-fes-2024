@@ -5,7 +5,7 @@ import { FaInstagram } from 'react-icons/fa6';
 export default function Footer() {
   return (
     <>
-      <footer className="bottom-0 mt-8 bg-[#1e2e48] bg-opacity-85">
+      <footer className="relative w-screen bottom-0 mt-8 bg-[#1e2e48] bg-opacity-85">
         <div className="container p-6 mx-auto">
           <div className="lg:flex">
             <div className="w-full -mx-6 lg:w-1/2">
@@ -48,7 +48,7 @@ export default function Footer() {
                 </div>
 
                 <div>
-                  <h3 className="font-bold text-xl uppercase text-primary_text_color">学園祭の楽しみ方</h3>
+                  <h3 className="font-bold text-xl uppercase text-primary_text_color">学園祭を楽しむ</h3>
                   <Link
                     href="/map"
                     className="block mt-2 text-sm  text-primary_text_color hover:underline"

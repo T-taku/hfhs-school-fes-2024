@@ -1,11 +1,10 @@
 import { formatDate } from '@/lib/date';
-import { getArticles } from '@/lib/newt';
-import { Article } from '@/types/article';
+import { getArticles } from '@/lib/newt_news';
 import Link from 'next/link';
 
 export default async function News() {
   const { articles } = await getArticles({
-    limit: 10,
+    limit: 5,
   });
 
   return (
@@ -19,8 +18,8 @@ export default async function News() {
                 <span className="text-sm mb-2 text-secondary_text_color">News</span>
               </div>
             </div>
-            <div className="flex flex-wrap gap-2 md:gap-4 justify-center items-start md:w-[1100px] px-4">
-              <ul className="space-y-4 text-xl">
+            <div className="flex flex-col gap-2 md:gap-4 justify-center items-center md:w-[1100px] px-4">
+              <ul className="relative space-y-4 text-xl">
                 {articles.map((article: any) => {
                   return (
                     <li key={article._id} className="flex items-start">
@@ -41,6 +40,9 @@ export default async function News() {
                   );
                 })}
               </ul>
+              <Link href={"/news"} className="relative mt-2">
+                <div className="border-primary_color border text-primary_color p-2 text-center rounded-full transition-all hover:bg-primary_color hover:text-primary_text_color">すべてのお知らせを見る</div>
+              </Link>
             </div>
           </div>
         </div>

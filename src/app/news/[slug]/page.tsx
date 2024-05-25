@@ -1,5 +1,5 @@
 import { formatDate } from '@/lib/date';
-import { getArticle, getArticles } from '@/lib/newt';
+import { getArticle, getArticles } from '@/lib/newt_news';
 import { notFound } from 'next/navigation';
 //@ts-ignore
 import { htmlToText } from 'html-to-text';
@@ -65,6 +65,10 @@ export default async function Page({ params }: Props) {
             {
               string: 'トップページ',
               path: '/',
+            },
+            {
+              string: 'お知らせ一覧',
+              path: '/news',
             },
             {
               string: article.title,

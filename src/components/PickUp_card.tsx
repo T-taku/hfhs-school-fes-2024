@@ -41,10 +41,10 @@ export default function PickUp_Card({
           <Image
             src={image ? image : '/logo_white_2.webp'}
             alt=""
-            width={1280}
-            height={900}
+            width={image ? 1200 : 200}
+            height={image ? 900 : 200}
             objectFit="cover"
-            className="w-full h-full object-fill"
+            className={image ? "w-full h-full object-fill" : "object-fill"}
           />
         </div>
       </div>

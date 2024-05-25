@@ -27,10 +27,28 @@ export default function PickUp() {
               >
                 <SplideSlide className="flex justify-center items-center">
                   <PickUp_Card
-                    title={`サッカー部・バレー部による招待試合開催決定!`}
-                    content="学園祭2日目には、我が校が誇るサッカー部、バレー部による招待試合を開催予定!ヒガシ生による熱いプレーにご注目ください!"
+                    title={`バレーボール部による招待試合開催決定!`}
+                    content="学園祭2日目に、バレーボール部による招待試合を開催予定!ヒガシ生による熱いプレーにご注目ください!"
                     link={''}
                     image={'/volley-ball.webp'}
+                    link_text={''}
+                  />
+                </SplideSlide>
+                <SplideSlide className="flex justify-center items-center">
+                  <PickUp_Card
+                    title={`小学生対象バレー体験開催!`}
+                    content="小学生を対象にした、バレーボール教室を雄飛間(体育館)にて開催! ヒガシの学園祭でバレーボールに挑戦してみよう!"
+                    link={'/news/elementary-school-volleyball-class-held'}
+                    image={'/volley-school.webp'}
+                    link_text={''}
+                  />
+                </SplideSlide>
+                <SplideSlide className="flex justify-center items-center">
+                  <PickUp_Card
+                    title={`サッカー部による招待試合開催決定!`}
+                    content="学園祭2日目に、サッカー部による招待試合を開催予定!ヒガシ生による熱いプレーにご注目ください!"
+                    link={''}
+                    image={'/soccer-clubs.webp'}
                     link_text={''}
                   />
                 </SplideSlide>
