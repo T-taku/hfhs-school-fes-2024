@@ -16,6 +16,7 @@ export default async function News_list() {
         <span className="block text-center text-primary_text_color text-3xl md:text-4xl font-bold">
           <BudouXText text={"お知らせ"} />
         </span>
+        <span className="block text-primary_text_color text-2xl font-bold">News</span>
       </div>
       <article className="p-2 md:px-20">
         <BreadCrumbs
