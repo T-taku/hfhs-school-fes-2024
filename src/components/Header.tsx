@@ -22,7 +22,7 @@ export default function Header() {
       ></div>
       <div className="absolute">
         <div
-          className={`fixed px-20 py-20 md:px-40 md:py-40 flex justify-center items-center text-primary_text_color transition-all duration-500 w-screen ${!isOpen ? `opacity-0 translate-y-10 pointer-events-none delay-300 duration-200 z-0` : `opacity-100 translate-y-0 pointer-events-auto delay-300 z-50`}`}
+          className={`fixed px-20 py-20 md:px-40 md:py-40 flex justify-center items-center text-primary_text_color transition-all duration-500 h-screen w-screen ${!isOpen ? `opacity-0 translate-y-10 pointer-events-none delay-300 duration-200 z-0` : `opacity-100 translate-y-0 pointer-events-auto delay-300 z-50`}`}
         >
           <div className="mt-6 lg:mt-0 lg:flex-1 flex justify-center items-center">
               <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
