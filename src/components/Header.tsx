@@ -40,6 +40,7 @@ export default function Header() {
                     href="/cautions"
                     className="block mt-2 text-xl  text-primary_text_color hover:underline"
                     prefetch={false}
+                    onClick={() => setOpen(!isOpen)}
                   >
                     来場前の注意点
                   </Link>
@@ -47,6 +48,7 @@ export default function Header() {
                     href="/message"
                     className="block mt-2 text-xl  text-primary_text_color hover:underline"
                     prefetch={false}
+                    onClick={() => setOpen(!isOpen)}
                   >
                     ごあいさつ
                   </Link>
@@ -54,6 +56,7 @@ export default function Header() {
                     href="/#news"
                     className="block mt-2 text-xl  text-primary_text_color hover:underline"
                     prefetch={false}
+                    onClick={() => setOpen(!isOpen)}
                   >
                     最新情報
                   </Link>
@@ -65,6 +68,7 @@ export default function Header() {
                     href="/map"
                     className="block mt-2 text-xl  text-primary_text_color hover:underline"
                     prefetch={false}
+                    onClick={() => setOpen(!isOpen)}
                   >
                     校内マップ
                   </Link>
@@ -72,6 +76,7 @@ export default function Header() {
                     href="/with-children"
                     className="block mt-2 text-xl  text-primary_text_color hover:underline"
                     prefetch={false}
+                    onClick={() => setOpen(!isOpen)}
                   >
                     お子様連れの方へ
                   </Link>
@@ -79,6 +84,7 @@ export default function Header() {
                     href="/timetable"
                     className="block mt-2 text-xl  text-primary_text_color hover:underline"
                     prefetch={false}
+                    onClick={() => setOpen(!isOpen)}
                   >
                     タイムテーブル
                   </Link>
