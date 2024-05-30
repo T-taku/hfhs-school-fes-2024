@@ -117,7 +117,7 @@ export default function Footer() {
                 <div className="max-md:w-full max-md:flex max-md:justify-center max-md:items-center">
                   <Link
                     href="https://instagram.com/higashifukuoka_official/"
-                    className="mx-2 transition-colors duration-300 text-gray-300 hover:opacity-85"
+                    className="mx-2 transition-colors duration-300 text-primary_text_color hover:opacity-85"
                     aria-label="Instagram"
                     prefetch={false}
                   >
