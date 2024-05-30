@@ -132,7 +132,7 @@ export default function Footer() {
 
           <div>
             <p className="text-center text-primary_text_color">
-              © 2024 Higashi Fukuoka High School Digital Committee All rights reserved.
+              © 2024 Higashi Fukuoka Senior High School Digital Committee All rights reserved.
             </p>
           </div>
         </div>

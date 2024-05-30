@@ -34,7 +34,7 @@ export default function Header() {
                     height="150"
                   />
                 </div>
-                <div>
+                <div className="flex flex-col">
                   <Link
                     href="/"
                     className="font-bold text-3xl uppercase text-primary_text_color hover:underline"
@@ -42,6 +42,14 @@ export default function Header() {
                     onClick={() => setOpen(!isOpen)}
                   >
                     トップページ
+                  </Link>
+                  <Link
+                    href="/access"
+                    className="font-bold text-3xl uppercase text-primary_text_color hover:underline"
+                    prefetch={false}
+                    onClick={() => setOpen(!isOpen)}
+                  >
+                    アクセス
                   </Link>
                 </div>
                 <div>
