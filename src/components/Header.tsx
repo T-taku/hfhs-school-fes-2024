@@ -25,7 +25,7 @@ export default function Header() {
           className={`fixed px-20 py-20 md:px-40 md:py-40 flex justify-center items-center text-primary_text_color transition-all duration-500 h-screen w-screen ${!isOpen ? `opacity-0 translate-y-10 pointer-events-none delay-300 duration-200 z-0` : `opacity-100 translate-y-0 pointer-events-auto delay-300 z-50`}`}
         >
           <div className="mt-6 lg:mt-0 lg:flex-1 flex justify-center items-center">
-              <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
                 <div className="max-md:flex max-md:justify-center max-md:items-center">
                   <Image
                     src={'/logo_white_2.webp'}
@@ -35,10 +35,20 @@ export default function Header() {
                   />
                 </div>
                 <div>
+                  <Link
+                    href="/"
+                    className="font-bold text-3xl uppercase text-primary_text_color hover:underline"
+                    prefetch={false}
+                    onClick={() => setOpen(!isOpen)}
+                  >
+                    トップページ
+                  </Link>
+                </div>
+                <div>
                   <h3 className="font-bold text-3xl uppercase text-primary_text_color">学園祭について</h3>
                   <Link
                     href="/cautions"
-                    className="block mt-2 text-xl  text-primary_text_color hover:underline"
+                    className="block mt-2 text-xl text-primary_text_color hover:underline"
                     prefetch={false}
                     onClick={() => setOpen(!isOpen)}
                   >
