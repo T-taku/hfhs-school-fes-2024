@@ -96,7 +96,6 @@ export default function For_Visitor() {
               />
             </div>
           </div>
-          <p className="text-primary_color mt-4">※現在コンテンツ準備中です※</p>
         </div>
       </div>
     </>
