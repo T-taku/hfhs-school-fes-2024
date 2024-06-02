@@ -8,7 +8,6 @@ import PickUp from '@/components/PickUp';
 export default function Home() {
   return (
     <>
-      <Important/>
       <Hero />
       <Information />
       <For_Visitor />
