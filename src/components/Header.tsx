@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { FaInstagram } from 'react-icons/fa6';
 import { IoIosMenu } from 'react-icons/io';
 import { IoMdClose } from 'react-icons/io';
 import Image from 'next/image';

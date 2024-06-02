@@ -40,7 +40,7 @@ export default function PickUp_Card({
         <div className="md:w-1/2 flex justify-center items-center h-full">
           <Image
             src={image ? image : '/logo_white_2.webp'}
-            alt=""
+            alt={title}
             width={image ? 1200 : 200}
             height={image ? 900 : 200}
             objectFit="cover"
