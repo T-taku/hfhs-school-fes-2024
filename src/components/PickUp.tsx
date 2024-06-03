@@ -47,7 +47,7 @@ export default function PickUp() {
                   <PickUp_Card
                     title={`サッカー部による招待試合開催決定!`}
                     content="学園祭2日目に、サッカー部による招待試合を開催予定!ヒガシ生による熱いプレーにご注目ください!"
-                    link={''}
+                    link={'/news/invitation-match-announcement'}
                     image={'/soccer-clubs.webp'}
                     link_text={''}
                   />
@@ -56,7 +56,7 @@ export default function PickUp() {
                   <PickUp_Card
                     title={`ラグビー部による招待試合開催決!`}
                     content="学園祭2日目に、ラグビー部による招待試合を開催予定!ヒガシ生による熱いプレーにご注目ください!"
-                    link={''}
+                    link={'/news/invitation-match-announcement'}
                     image={'/rugby.webp'}
                     link_text={''}
                   />
@@ -65,7 +65,7 @@ export default function PickUp() {
                   <PickUp_Card
                     title={`野球部による招待試合開催決!`}
                     content="学園祭2日目に、野球部による招待試合を開催予定!ヒガシ生による熱いプレーにご注目ください!"
-                    link={''}
+                    link={'/news/invitation-match-announcement'}
                     image={'/baseball.webp'}
                     link_text={''}
                   />

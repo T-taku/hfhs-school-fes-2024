@@ -13,8 +13,8 @@ export default function Information() {
           </div>
           <div className="p-4 md:p-10 bg-primary_color justify-center">
             <div className="border-primary_text_color border-solid border-2 p-10 soace-y-3">
-              <h3 className="text-xl md:text-2xl hidden md:block">2024年6月7日(金) 生徒開催 10時00分から13時00分まで</h3>
-              <h3 className="text-xl md:text-2xl hidden md:block">2024年6月8日(土) 一般開放 9時30分から14時30分まで</h3>
+              <h3 className="text-xl md:text-2xl hidden md:block">2024年6月7日(金) 生徒開催 10:00から13:00まで</h3>
+              <h3 className="text-xl md:text-2xl hidden md:block">2024年6月8日(土) 一般開放 9:30から14:30まで</h3>
               <h3 className="text-xl md:text-2xl block md:hidden">
                 2024年6月7日(金)
                 <br />
