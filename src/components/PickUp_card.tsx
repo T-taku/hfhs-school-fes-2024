@@ -44,7 +44,7 @@ export default function PickUp_Card({
             width={image ? 1200 : 200}
             height={image ? 900 : 200}
             objectFit="cover"
-            className={image ? "w-full h-full object-fill" : "object-fill"}
+            className={image ? "w-full h-full object-cover object-center" : "object-fill"}
           />
         </div>
       </div>

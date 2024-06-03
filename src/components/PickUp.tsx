@@ -54,6 +54,24 @@ export default function PickUp() {
                 </SplideSlide>
                 <SplideSlide className="flex justify-center items-center">
                   <PickUp_Card
+                    title={`ラグビー部による招待試合開催決!`}
+                    content="学園祭2日目に、ラグビー部による招待試合を開催予定!ヒガシ生による熱いプレーにご注目ください!"
+                    link={''}
+                    image={'/rugby.webp'}
+                    link_text={''}
+                  />
+                </SplideSlide>
+                <SplideSlide className="flex justify-center items-center">
+                  <PickUp_Card
+                    title={`野球部による招待試合開催決!`}
+                    content="学園祭2日目に、野球部による招待試合を開催予定!ヒガシ生による熱いプレーにご注目ください!"
+                    link={''}
+                    image={'/baseball.webp'}
+                    link_text={''}
+                  />
+                </SplideSlide>
+                <SplideSlide className="flex justify-center items-center">
+                  <PickUp_Card
                     title={`スタンプを集めて、ヒガシオリジナルグッズをゲット!`}
                     content="各文化部展示会場に設置されている、スタンプを全て集めて、ヒガシオリジナルグッズをゲットしよう!!"
                     link={''}

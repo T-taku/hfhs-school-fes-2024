@@ -77,6 +77,14 @@ export default function Header() {
                   >
                     最新情報
                   </Link>
+                  <Link
+                    href="https://hfjj2224010.wixsite.com/hfjj-gakuensai2024"
+                    className="block mt-2 text-xl  text-primary_text_color hover:underline"
+                    prefetch={false}
+                    onClick={() => setOpen(!isOpen)}
+                  >
+                    中学校ウェブサイト
+                  </Link>
                 </div>
 
                 <div>
