@@ -55,7 +55,7 @@ export default async function Page({ params }: Props) {
 
   return (
     <main>
-      <div className="flex flex-col justify-center items-center p-20 bg-menu_color md:bg-news_accent bg-no-repeat">
+      <div className="flex flex-col justify-center items-center p-20 bg-menu_color">
         <span className="block text-primary_text_color text-4xl font-bold">お知らせ</span>
         <span className="block text-primary_text_color text-2xl font-bold">News</span>
       </div>
