@@ -27,10 +27,10 @@ export default function PickUp() {
               >
                 <SplideSlide className="flex justify-center items-center">
                   <PickUp_Card
-                    title={`バレーボール部による招待試合開催決定!`}
-                    content="学園祭2日目に、バレーボール部による招待試合を開催予定!ヒガシ生による熱いプレーにご注目ください!"
-                    link={''}
-                    image={'/volley-ball.webp'}
+                    title={`運動部による招待試合開催決定!`}
+                    content="学園祭2日目に、各運動部による招待試合を開催予定!ヒガシ生による熱いプレーにご注目ください!"
+                    link={'/news/invitation-match-announcement'}
+                    image={'/Invitation_Match.webp'}
                     link_text={''}
                   />
                 </SplideSlide>
@@ -40,33 +40,6 @@ export default function PickUp() {
                     content="小学生を対象にした、バレーボール教室を雄飛間(体育館)にて開催! ヒガシの学園祭でバレーボールに挑戦してみよう!"
                     link={'/news/elementary-school-volleyball-class-held'}
                     image={'/volley-school.webp'}
-                    link_text={''}
-                  />
-                </SplideSlide>
-                <SplideSlide className="flex justify-center items-center">
-                  <PickUp_Card
-                    title={`サッカー部による招待試合開催決定!`}
-                    content="学園祭2日目に、サッカー部による招待試合を開催予定!ヒガシ生による熱いプレーにご注目ください!"
-                    link={'/news/invitation-match-announcement'}
-                    image={'/soccer-clubs.webp'}
-                    link_text={''}
-                  />
-                </SplideSlide>
-                <SplideSlide className="flex justify-center items-center">
-                  <PickUp_Card
-                    title={`ラグビー部による招待試合開催決!`}
-                    content="学園祭2日目に、ラグビー部による招待試合を開催予定!ヒガシ生による熱いプレーにご注目ください!"
-                    link={'/news/invitation-match-announcement'}
-                    image={'/rugby.webp'}
-                    link_text={''}
-                  />
-                </SplideSlide>
-                <SplideSlide className="flex justify-center items-center">
-                  <PickUp_Card
-                    title={`野球部による招待試合開催決!`}
-                    content="学園祭2日目に、野球部による招待試合を開催予定!ヒガシ生による熱いプレーにご注目ください!"
-                    link={'/news/invitation-match-announcement'}
-                    image={'/baseball.webp'}
                     link_text={''}
                   />
                 </SplideSlide>
