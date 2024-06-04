@@ -12,7 +12,7 @@ export default async function News_list() {
   const { articles } = await getArticles();
   return (
     <main className='min-h-screen'>
-      <div className="flex flex-col justify-center items-center p-20 bg-menu_color bg-news_accent">
+      <div className="flex flex-col justify-center items-center p-20 bg-menu_color md:bg-news_accent">
         <span className="block text-center text-primary_text_color text-3xl md:text-4xl font-bold">
           <BudouXText text={"お知らせ"} />
         </span>
