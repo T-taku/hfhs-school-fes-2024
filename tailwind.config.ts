@@ -15,7 +15,8 @@ const config = {
     },
     extend: {
       backgroundImage: {
-        footer: "url('/night_school.webp')",
+        news_accent: "url('/news_accent.svg')",
+        article_accent: "url('/news_accent.svg')",
       },
       fontFamily: {
         notojp: ['var(--font-notojp)'],

@@ -47,7 +47,7 @@ export default async function Page({ params }: Props) {
 
   return (
     <main>
-      <div className="flex flex-col justify-center items-center p-20 bg-menu_color">
+      <div className="flex flex-col justify-center items-center p-20 bg-menu_color bg-news_accent bg-no-repeat">
         <span className="block text-center text-primary_text_color text-3xl md:text-4xl font-bold">
           <BudouXText text={article.title} />
         </span>
