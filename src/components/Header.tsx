@@ -47,7 +47,7 @@ export default function Header() {
                   <h3 className="font-bold text-3xl uppercase text-primary_text_color">学園祭について</h3>
                   <Link
                     href="/access"
-                    className="font-bold text-3xl uppercase text-primary_text_color hover:underline"
+                    className="block mt-2 text-xl text-primary_text_color hover:underline"
                     prefetch={false}
                     onClick={() => setOpen(!isOpen)}
                   >
