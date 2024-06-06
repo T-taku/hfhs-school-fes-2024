@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Important/>
       <Information />
       <For_Visitor />
       <PickUp />
