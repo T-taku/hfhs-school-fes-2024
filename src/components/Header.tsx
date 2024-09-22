@@ -26,12 +26,14 @@ export default function Header() {
           <div className="mt-6 lg:mt-0 lg:flex-1 flex justify-center items-center">
               <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
                 <div className="max-md:flex max-md:justify-center max-md:items-center">
-                  <Image
-                    src={'/logo_white_2.webp'}
-                    alt={'東福岡学園 学園祭 2024 ロゴ'}
-                    width="150"
-                    height="150"
-                  />
+                  <h1>
+                    <Image
+                      src={'/logo_white_2.webp'}
+                      alt={'東福岡高校 学園祭 2024'}
+                      width="150"
+                      height="150"
+                    />
+                  </h1>
                 </div>
                 <div className="flex flex-col">
                   <Link

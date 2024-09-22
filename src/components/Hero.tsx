@@ -36,13 +36,16 @@ export default function Hero() {
             style={{ backgroundImage: `url(${src})` }}
           >
             <div className="text-center">
-              <Image
-                src="/logo_white_1.webp"
-                alt="東福岡学園 学園祭 2024 ロゴ"
-                width={300}
-                height={300}
-                loading="eager"
-              />
+              <h1>
+                <Image
+                  src="/logo_white_1.webp"
+                  alt="東福岡学園 学園祭 2024"
+                  width={300}
+                  height={300}
+                  loading="eager"
+                />
+                </h1>
+              
             </div>
           </SplideSlide>
         ))}
