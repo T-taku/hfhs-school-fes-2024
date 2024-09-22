@@ -5,6 +5,7 @@ import { getArticles, getCategories } from '@/lib/newt_news';
 import { formatDate } from '@/lib/date';
 import Link from "next/link";
 
+export const runtime = 'edge';
 
 export const dynamicParams = false;
 

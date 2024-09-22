@@ -12,6 +12,8 @@ type Props = {
   };
 };
 
+export const runtime = 'edge';
+
 const NotoSans = Noto_Sans_JP({ subsets: ['latin'] });
 
 export async function generateStaticParams() {
